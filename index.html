@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="main.css" />
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <main id="main" class="flex-column-center">
+            <!-- Heading -->
+            <div id="heading" class="flex-row-center">
+                <h1 id="title">Get Your Free Mushroom</h1>
+                <p id="description">
+                    Yes, we're giving our free mushrooms! Tell us about
+                    yourself.
+                </p>
+            </div>
+            <!-- Form -->
+            <div class="flex-row-center">
+                <form id="survey-form" class="flex-row-space-between">
+                    <div id="form-left" class="flex-col-center">
+                        <div class="flex-col-center">
+                            <label id="name-label" for="name"></label>
+                            <input
+                                id="name"
+                                type="text"
+                                placeholder="What's your name?"
+                                required
+                            />
+
+                            <label id="number-label" for="number"></label>
+                            <input
+                                id="number"
+                                type="number"
+                                placeholder="How old are you?"
+                                required
+                            />
+
+                            <label id="email-label" for="email"></label>
+                            <input
+                                type="email"
+                                placeholder="Got an email id?"
+                                required
+                            />
+                        </div>
+                        <!-- Radio buttons -->
+                        <div id="radio" class="flex-col-center">
+                            <p>Would you like your name on the box?</p>
+                            <div>
+                                <input
+                                    type="radio"
+                                    name="box-name"
+                                    id="yes"
+                                    required
+                                />
+                                <label for="yes">Yes</label>
+
+                                <input type="radio" name="box-name" id="nope" />
+                                <label for="nope">Nope</label>
+                            </div>
+                        </div>
+                        <!-- Checkboxes -->
+                        <div id="checkbox" class="flex-col-center">
+                            <p>Which are your favorite colors?</p>
+                            <div>
+                                <input
+                                    type="checkbox"
+                                    name="mushroom-color"
+                                    id="green"
+                                    value="green"
+                                    checked
+                                    required
+                                />
+                                <label for="green">Green</label>
+
+                                <input
+                                    type="checkbox"
+                                    name="mushroom-color"
+                                    id="red"
+                                    value="red"
+                                />
+                                <label for="red">Red</label>
+
+                                <input
+                                    type="checkbox"
+                                    name="mushroom-color"
+                                    id="blue"
+                                    value="blue"
+                                />
+                                <label for="blue">Blue</label>
+
+                                <input
+                                    type="checkbox"
+                                    name="mushroom-color"
+                                    id="yellow"
+                                    value="yellow"
+                                />
+                                <label for="yellow">Yellow</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Comment Box/textarea -->
+                    <div id="form-right" class="flex-col-center">
+                        <div id="comment-box">
+                            <textarea
+                                rows="15"
+                                cols="80"
+                                name="comment"
+                                id="comment"
+                                placeholder="How excited are you to receive out handpicked mushrooms? You can use the dropdown below to tell us about it."
+                                required
+                            ></textarea>
+                        </div>
+                        <!-- Dropdown List -->
+                        <div id="dropdown">
+                            <select
+                                onchange="display()"
+                                name="dropdown"
+                                id="dropdown-list"
+                            >
+                                <option
+                                    value="I'm so excited I want to send you guys a million dollars!"
+                                    >I'm so excited I want to send you guys a
+                                    million dollars!</option
+                                >
+                                <option value="I'm so excited!"
+                                    >I'm so excited!</option
+                                >
+                                <option
+                                    value="I want to send you guys so many chocolates"
+                                    >I want to send you guys so many
+                                    chocolates</option
+                                >
+                            </select>
+                        </div>
+                        <button id="button">SEND IT NOW</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

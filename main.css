@@ -132,13 +132,16 @@ select,
 #survey-form {
     margin-top: 5%;
     width: 90%;
+    /* background: #e1c5c5; */
     /* border: 10px solid #5d5068; */
     /* margin: 10vh auto; */
 }
 textarea {
-    /* width: 600px;
-    height: 300px; */
+    width: 600px;
+    height: 300px;
     padding: 10px 15px;
+    /* width: calc(100% - 30px); */
+
     resize: none;
 }
 
@@ -178,7 +181,7 @@ option {
     cursor: pointer;
 }
 #comment-box {
-    padding-left: 10px;
+    /* padding-left: 10px; */
 }
 @media only screen and (max-width: 1000px) {
     #survey-form {
